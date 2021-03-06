@@ -12,11 +12,11 @@ private:
 public:
 	Ataque();
 	Ataque(string,string,int);
-    string getNombre() const;
+    string getNombre();
     void setNombre(string nombre);
-    string getTipo() const;
+    string getTipo();
     void setTipo(string tipo);
-    int getPoder() const;
+    int getPoder();
     void setPoder(int poder);
 };
 #endif

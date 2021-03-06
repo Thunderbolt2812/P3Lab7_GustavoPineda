@@ -1,8 +1,6 @@
 #include "Nokemon.hpp"
 
-Nokemon::Nokemon(){
-	
-}
+Nokemon::Nokemon(){}
 
 Nokemon::Nokemon(int defensa, int ataque, vector<Ataque*> ataques, int saludActual, int saludMaxima ,int nivel ,string nombre){
 	this->defensa = defensa;

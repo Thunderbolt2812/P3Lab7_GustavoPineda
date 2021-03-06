@@ -6,7 +6,7 @@
 #include"NokemonHielo.hpp"
 #include"Ataque.hpp"
 using namespace std;
-class Charamuscomon: public NokemonHielo {
+class Charamuscomon: public NokemonHielo{
 	public:
 		Charamuscomon(string nombre);
 		vector<Ataque*> getAtaques();

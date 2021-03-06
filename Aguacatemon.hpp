@@ -8,7 +8,7 @@
 using namespace std;
 class Aguacatemon: public NokemonHierba {
 	public:
-		Aguacatemon(string nombre);
+		Aguacatemon(string nombre) ;
 		vector<Ataque*> getAtaques();
 };
 #endif

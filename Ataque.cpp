@@ -7,18 +7,15 @@ Ataque::Ataque(string nombre,string tipo,int poder){
 	this->tipo = tipo;
 	this->poder = poder;
 }
-string Ataque::getNombre() const
-{
+string Ataque::getNombre(){
     return nombre;
 }
 
-void Ataque::setNombre(string nombre)
-{
+void Ataque::setNombre(string nombre){
     this->nombre = nombre;
 }
 
-string Ataque::getTipo() const
-{
+string Ataque::getTipo(){
     return tipo;
 }
 
@@ -27,12 +24,10 @@ void Ataque::setTipo(string tipo)
     this->tipo = tipo;
 }
 
-int Ataque::getPoder() const
-{
+int Ataque::getPoder(){
     return poder;
 }
 
-void Ataque::setPoder(int poder)
-{
+void Ataque::setPoder(int poder){
     this->poder = poder;
 }

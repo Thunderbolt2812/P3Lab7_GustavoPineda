@@ -3,10 +3,10 @@ NokemonHielo::NokemonHielo(int defensa, int ataque, vector<Ataque*> ataques, int
 	InicializarAtaque();	
 }
 void NokemonHielo::InicializarAtaque(){
+	srand((unsigned)time(0));
 	if(ataques.size()!=6){
 		if(ataques.size()<1){
 			for(int i = 0;i<2;i++){
-				srand((unsigned)time(0));
 				int random = 0+(rand()%6);
 				switch(random){
 					case 1:{
@@ -36,9 +36,8 @@ void NokemonHielo::InicializarAtaque(){
 				}
 			}
 		}else{
-			srand((unsigned)time(0));
-			int random = 0+(rand()%6);
-			switch(random){
+			int random2 = 0+(rand()%6);
+			switch(random2){
 				case 1:{
 					ataques.push_back(new Ataque("Congelar","Hielo",10));
 					break;

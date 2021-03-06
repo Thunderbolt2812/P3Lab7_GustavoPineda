@@ -5,7 +5,7 @@
 #include<iostream>
 #include"Ataque.hpp"
 using namespace std;
-class Nokemon {
+class Nokemon{
 protected:
 	int defensa;
 	int ataque;
