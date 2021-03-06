@@ -2,7 +2,7 @@
 #define SIMULADORBATALLA_HPP
 #include<string>
 #include<iostream>
-#include"NokemonFuego.hpp"
+#include"Nokemon.hpp"
 #include "Ataque.hpp"
 using namespace std;
 class SimuladorBatalla {

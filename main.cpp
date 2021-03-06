@@ -7,7 +7,7 @@
 #include "NokemonFuego.hpp"
 #include "NokemonHielo.hpp"
 #include "NokemonHierba.hpp"
-
+//No se que ondas con esta cosa, no se cual es el erorr porfa teneme compasion hahahahaha
 int main(int argc, char** argv) {
 	int opcion = 0;
 	while(opcion!=2){
@@ -25,12 +25,6 @@ int main(int argc, char** argv) {
 				cin>>nombre;
 				Nokemon* e;
 				Nokemon* c;
-				Anafremon* an = new Anafremon(nombre);
-				Aguacatemon* ag = new Aguacatemon(nombre);
-				Charamuscomon* ch = new Charamuscomon(nombre);
-				Anafremon* an1 = new Anafremon("Anafremon");
-				Aguacatemon* ag1 = new Aguacatemon("Aguacatemon");
-				Charamuscomon* ch1 = new Charamuscomon("Charamuscomon");
 				cout<<endl;
 				int opcion2 = 0;
 				while(opcion2!=4){
@@ -44,16 +38,18 @@ int main(int argc, char** argv) {
 						cin>>opcion2;
 						switch(opcion2){
 							case 1:{
-								e = an;
+								Anafremon* an = new Anafremon(nombre);	
 								eligio = true;
 								break;
 							}
 							case 2:{
+								Aguacatemon* ag = new Aguacatemon(nombre);	
 								e = ag;
 								eligio = true; 
 								break;
 							}
 							case 3:{
+								Charamuscomon* ch = new Charamuscomon(nombre);	
 								e = ch;
 								eligio = true; 
 								break;
@@ -68,14 +64,17 @@ int main(int argc, char** argv) {
 					int random = 1+(rand()%3);
 					switch(random){
 						case 1:{
-							c = an;
+							Anafremon* an1 = new Anafremon("Anafremon");	
+							c = an1;
 							break;
 						}
 						case 2:{
-							c = ag;
+							Aguacatemon* ag1 = new Aguacatemon("Aguacatemon");	
+							c = ag1;
 							break;
 						}
 						case 3:{
+							Charamuscomon* ch = new Charamuscomon("Charamuscomon");	
 							c = ch;
 						}
 					}
@@ -106,12 +105,6 @@ int main(int argc, char** argv) {
 					s->simular(e,c);
 					delete e;
 					delete c;
-					delete an;
-					delete an1;
-					delete ag;
-					delete ag1;
-					delete ch;
-					delete ch1;
 				}
 				break;
 			}
